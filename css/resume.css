@@ -149,3 +149,8 @@ a {
 a:hover, a:focus, a:active {
   color:#537ecf;
 }
+
+.dark-mode {
+  background-color: #2d2d2d;
+  color: #fff;
+}
