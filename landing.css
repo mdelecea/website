@@ -14,47 +14,6 @@ h3 {
 
 ul {
   list-style-position: outside;
-  margin-left: 1.5rem;
-}
-
-.doc__nav {
-  text-align: right;
-  overflow: hidden;
-  list-style: none;
-  flex-basis: 20%;
-  font-weight: 200;
-}
-
-.doc__nav ul {
-  list-style: none;
-  padding-left: 0;
-  line-height: 1.8;
-}
-
-.doc__nav ul.fixed {
-  position: fixed;
-  top: 2rem;
-}
-
-.doc__nav li:hover {
-  color: var(--primary-color-light);
-  cursor: pointer;
-  transition: color .3s ease-in-out;
-}
-
-.doc__nav .selected {
-  color: var(--accent-color);
-  position: relative;
-}
-
-.doc__nav .selected:after {
-  position: absolute;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--accent-color);
-  left: -1.5rem;
-  top: 0.3rem;
 }
 
 /* hero section */
@@ -91,20 +50,36 @@ ul {
   padding-top: 1rem;
 }
 
+/* skills section */
+
+.skills li {
+  margin-bottom: 0.5rem;
+  clear: both;
+}
+
+.devicons {
+  font-size: 3rem;
+}
+
+.devicons i:hover{
+  color: var(--accent-color);
+}
+
 /* experience section */
 .experience {
   margin-bottom: 20px;
 }
 
 .experience__item {
-  margin: 0 20px 0 0;
+  margin: 1rem 1rem 0 0;
 }
 
 .experience .section__title {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .experience__item p {
+  margin-bottom: 0.5rem;
   margin-top: 0.5rem;
   clear: both;
 }
@@ -125,17 +100,23 @@ ul {
   text-align: left;
   font-weight: bold;
   margin-inline-end: 10%;
+  margin-bottom: 1rem;
 }
 
 /* education section */
 
 .education__item {
-  margin-bottom: 20px;
+  margin-block: 1rem;
   clear: both;
 }
 
+.education__item p {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
 .education__item .section__title {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .education__item .subheading {
@@ -154,16 +135,6 @@ ul {
 .education__item .resume_date {
   float: right;
   text-align: right;
-}
-
-/* skills section */
-
-.devicons {
-  font-size: 3rem;
-}
-
-.devicons i:hover{
-  color: var(--accent-color);
 }
 
 @media (max-width: 750px) {

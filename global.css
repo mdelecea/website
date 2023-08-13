@@ -48,6 +48,11 @@ hr {
 
 /* global components */
 
+.material-symbols-outlined{
+  position: relative;
+  top: 0.3rem;
+}
+
 /* typography */
 .section__title {
   color: var(--primary-color);
