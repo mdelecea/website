@@ -323,11 +323,3 @@ table td:first-child {
     transform: translate3d(0,0,0);
   }
 }
-
-@font-face {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Nunito Sans'),local('Nunito-Sans'),local('sans-serif'),url(https://fonts.googleapis.com/css?family=Nunito+Sans:300&display=swap);
-}

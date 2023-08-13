@@ -12,16 +12,14 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `about
-  TOPIC
-    Marc de Lecea Help System
+  var txt = `about_me.txt
 
   SHORT DESCRIPTION
     Hardworking and versatile engineer.
 
   LONG DESCRIPTION
-    Marc de Lecea is a robotics, mehcanical, and software engineer with a passion for building things. 
-    He has worked on a variety of projects and in a variety of industries, including biotech, aerospace, and medical devices.
+    Marc de Lecea is a robotics, mechanical, and software engineer with a passion for building things. 
+    He has worked in a variety of industries, including biotech, agtech, and medical devices.
 
     Originally from California, Marc currently lives in Boston, Massachusetts, and is fluent in English and Spanish.
 
