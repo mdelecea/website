@@ -1,579 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Personal website for Marc de Lecea">
-  <meta name="author" content="marcdelecea">
-  <meta name="keywords" content="resume,personal,marc,de,lecea,marc de lecea,de lecea">
-
-  <title>Marc de Lecea</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
-
-  <!-- Favicon Settings-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="theme-color" content="#ffffff">
-
-</head>
-
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none"></span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/index.png" alt="Profile Picture">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <!--
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#jobs">What I can do</a>
-        </li>
-      -->
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#activities">Activities</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact_me">Contact Me</a>
-        </li>
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Personal website for Marc de Lecea">
+      <meta name="author" content="marcdelecea">
+      <meta name="keywords" content="resume,personal,marc,de,lecea,marc de lecea,de lecea">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Marc de Lecea</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="global.css">
+      <link rel="stylesheet" href="landing.css">
+  </head>
+  <body>
+    <nav>
+      <div></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://www.linkedin.com/in/marcdelecea" class="link link--dark"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <li class="menu__item"><a href="https://github.com/mdelecea" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="Marc de Lecea Resume.pdf" class="link link--dark"><i class="fa fa-download"></i> Resume</a></li>
       </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">Marc de Lecea</h1>
+      <p class="hero__description">Automation Engineer</p>
     </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-      <div class="my-auto">
-        <h1 class="mb-0">Marc
-          <span class="text-primary">de Lecea</span>
-        </h1>
-        <p class="mb-5">I am a hardworking student with various work experiences. I provide passion and enthusiasm for every project
-          I do. If you are looking for a student with mechanical design and programming experience, consider hiring me to
-          do whatever task you require.</p>
-        <ul class="list-inline list-social-icons mb-0">
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/marcdelecea" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
+    <div class="hero__terminal">
+      <pre>
+        <code class="shell-session demo">mdelecea ~ $ </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <section class="experience js-section">
+        <h2>Experience</h2>
+        <h3 class="section__title">Automation Engineer</h3>
+        <div class="resume_date">June 2022 - Present </div>
+        <div class="subheading">Generate Biomedicines</div>
+        <ul class="experience__item">
+          <li>
+            Created LLM-powered platemap transformer for users to quickly create complex plate layouts.
           </li>
-          <li class="list-inline-item">
-            <a href="Marc de Lecea Resume.pdf"
-              download="">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-download fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
+          <li>
+            Developed a universal Lynx liquid handler worklist parser that optimizes multi-dispensing, splits volumes to fit tips, and automatically arranges labware to enhance operational efficiency.
           </li>
-          <li class="list-inline-item">
-            <a href="mailto:marc.de.lecea@gmail.com" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
+          <li>
+            Designed and implemented an API to receive and parse real-time usage data from lab instruments, ensuring prompt alerts through Slack messages if an instrument requires attention.
           </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/mdelecea" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
+          <li>
+            Hosted and integrated Streamlit data dashboard using live lab instrument data from the API, enhancing data visualization and analysis capabilities.
+          </li>
+          <li>
+            Successfully onboarded a fully integrated HighRes system, increasing bandwidth by 600%.
+          </li>
+          <li>
+            Created and maintained a modular Python API that transforms platemaps and generates worklists for liquid handlers, streamlining workflows.
+          </li>
+          <li>
+            Collaborated with the Informatics team to host the API using AWS Lambda and implemented an Aurelia frontend for the tools.
+          </li>
+          <li>
+            Designed intelligent Lunatic transfer and read methods, enabling fully automatic normalization from concentration readings by updating database and calling custom API.
+          </li>
+          <li>
+            Improved liquid handler integration driver reliability and reduced command latency by 1000%.
+          </li>
+          <li>
+            Elevated barcode coverage from 0% to 70% of lab processes through new tools and trainings.
+          </li>
+          <li>
+            Effectively mentored and guided junior engineers, fostering a collaborative and supportive team environment.
           </li>
         </ul>
-      </div>
-    </section>
-    <!--
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="jobs">
-      <div class="my-auto">
-        <h2 class="mb-5">What I can do</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5" id="web-development">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Web Development</h3>
-            <div class="subheading mb-3">Start your online presence</div>
-            <p>I can set up and maintain static webpages for you and your company hosted on a server of your choice. This website
-              is a good example of what I can do for you.</p>
-          </div>
-        </div>
-        <div class="resume-item d-flex flex-column flex-md-row mb-5" id="robot-design">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Robot Design</h3>
-            <div class="subheading mb-3">Get the most out of your robot</div>
-            <p>Having both mechanical and programming training and experience, I am well-suited to help your company develop
-              your robotics project. I am flexible and great for "filling in the gaps".</p>
-          </div>
-        </div>
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto" id="tutoring">
-            <h3 class="mb-0">STEM Tutoring</h3>
-            <div class="subheading mb-3">Strengthen your understanding of math and science</div>
-            <p>I love teaching children the joys of making something with your own hands, and I am capable of throughly teaching
-              your children about programming, mechanical principles, and teamwork.</p>
-          </div>
-        </div>
-        <p>Feel free to reach out to me about these or other types of jobs using the contact form below.</p>
-      </div>
-    -->
-    </section>
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-      <div class="my-auto">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Manufacturing Automation Intern</h3>
-            <div class="subheading mb-3">Hologic Inc.</div>
-            <p>Automated serialization process by dynamically generating laser engraving toolpath with Python. 
-              Took project from start to finish, including programming, hardware fixtures for ergonomics and constistency, and documentation.
-              Documented usage procedure, maintenance manual, calibration tables, and validation tests for long-term manufacturing process.
-              Used Agile to manage project, and used Git to track project progress.
-              Prototyped and built cuztom batch PCB cleaning tool to speed up flux blowoff process by up to 1500% without damaging sensitive components.
-              Modified and optimized Android testing application to speed up probe verification and increase accuracy, as well as reduce training needed.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2021 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Research Assistant</h3>
-            <div class="subheading mb-3">Sam Das Lab</div>
-            <p>Applied A* pathfinding algorithm and plane mapping to microrobot swarm simulation to provide control for previous work and broaden robot capability.
-              Created MATLAB GUI to assist visualization of microrobots and their path planning decisions.
-              Used LabVIEW to create manual, joystick-based control schema of microrobots using magnetic field array.
-              Implemented vision tracking system to measure and automatically control multiple microrobots simultaneously.
-              Crafted automatic control and calibration system to accurately direct robots toward desired destination.
-              </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2020 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Machine Design Teaching Assistant</h3>
-            <div class="subheading mb-3">University of Delaware</div>
-            <p>Created interactive demo SolidWorks models and python scripts for students studying at home to demonstrate movement and fundamental concepts.
-              Led office hours and published short discussion videos reviewing principle equations and problems.
-              </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2020 - December 2020</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Fulfillment Associate</h3>
-            <div class="subheading mb-3">Nordstrom</div>
-            <p>Optimized workflow by increasing accessibility to product depots. 
-              Ensured customer satisfaction with timely and thorough item searches. 
-              Leveraged company database to fullest extent to assess product placement.
-              </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2019 - August 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Intern</h3>
-            <div class="subheading mb-3">TRIC Robotics</div>
-            <p>Developed novel root imaging robot in collaboration with PhD student to determine plant health and yield. 
-              Used ROS to simulate and program robotic arm. 
-              Used Solidworks to develop alternative mechanical solutions, saving cost and complexity.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2019 - March 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Intern</h3>
-            <div class="subheading mb-3">SAP D-Shop Palo Alto</div>
-            <p>Created learning materials for "Bring your child to work day", including a Snap! programmable car and blockchain
-              demonstration using Micro:Bits. Worked on creating apps with Android Things and AWS DeepLens to expand platform availibility for team and exhibit new avenues of approach.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2018 - August 2018</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Engineering Intern</h3>
-            <div class="subheading mb-3">Vala Sciences</div>
-            <p>Designed and machined parts for a lab-grade high-throughput microscope. 
-              Given design objectives, planned and
-              designed parts, and got parts approved by team of five professional engineers. 
-              Used SolidWorks to CAD lens/mirrormounts, 3D-printed mockups, custom crates, I/O panels, and badge jigs.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2015 - July 2015</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">IT Intern</h3>
-            <div class="subheading mb-3">RegenCor</div>
-            <p>Established website, domain, and network drive/server and communicated with non-technical users.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2015 - April 2016</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Intern</h3>
-            <div class="subheading mb-3">University Cardiology Lab, Utrecht, NL</div>
-            <p>Modeled 3D views of experimental pig hearts to be printed out of agar compound using a MATLAB GUI.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2014 - July 2014</span>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-      <div class="my-auto">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">University of Delaware</h3>
-            <div class="subheading mb-3">Newark, DE</div>
-            <div>Master's of Science in Robotics</div>
-            <p>GPA: 3.70</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2021 - May 2022 (est)</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">University of Delaware</h3>
-            <div class="subheading mb-3">Newark, DE</div>
-            <div>Bachelor of Mechanical Engineering</div>
-            <p>Minor in Computer Science</p>
-            <p>Dean's List Spring 2020 - Spring 2021</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2017 - May 2021</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Henry M. Gunn High School</h3>
-            <div class="subheading mb-3">Palo Alto, CA</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2013 - May 2017</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-      <div class="my-auto">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages</div>
-        <ul class="list-inline list-icons">
-          <li class="list-inline-item">
-            <i class="devicon-java-plain colored"></i>
+        <h3 class="section__title">Manufacturing Automation Engineer</h3>
+        <div class="resume_date">June 2021 - March 2022</div>
+        <div class="subheading">Hologic Inc.</div>
+        <ul class="experience__item">
+          <li>
+            Automated serialization process by dynamically generating laser engraving toolpath with Python.
           </li>
-          <li class="list-inline-item">
+          <li>
+            Took project from start to finish, including programming, hardware fixtures for ergonomics and constistency, and documentation.
+          </li>
+          <li>
+            Documented usage procedure, maintenance manual, calibration tables, and validation tests for long-term manufacturing process.
+          </li>
+          <li>
+            Used Agile to manage project, and used Git to track project progress.
+          </li>
+          <li>
+            Prototyped and built custom batch PCB cleaning tool to speed up flux blowoff process by up to 1500% without damaging sensitive components.
+          </li>
+          <li>
+            Modified and optimized Android testing application to speed up probe verification and increase accuracy, as well as reduce training needed.
+          </li>
+        </ul>
+        <h3 class="section__title">Research Assistant</h3>
+        <div class="resume_date">June 2020 - Present </div>
+        <div class="subheading">Sam Das Lab</div>
+        <ul class="experience__item">
+          <li>
+            Applied A* pathfinding algorithm and plane mapping to microrobot swarm simulation to provide control for previous work and broaden robot capability.
+          </li>
+          <li>
+            Created MATLAB GUI to assist visualization of microrobots and their path planning decisions.
+          </li>
+          <li>
+            Used LabVIEW to create manual, joystick-based control schema of microrobots using magnetic field array.
+          </li>
+          <li>
+            Implemented vision tracking system to measure and automatically control multiple microrobots simultaneously.
+          </li>
+          <li>
+            Crafted automatic control and calibration system to accurately direct robots toward desired destination.
+          </li>
+        </ul>
+      </section>
+
+      <section class="education js-section">
+        <h2>Education</h2>
+        <div class="education__item">
+          <h3 class="section__title">University of Delaware</h3>
+          <div class="resume_date">August 2021 - May 2022</div>
+          <div class="subheading">Newark, DE</div>
+          <div class="degree_title">Master's of Science in Robotics</div>
+          <p class="subheading">Concentrations: AI and Controls</p>
+          <p class="resume_date">GPA: 3.70</p>
+        </div>
+        <div class="education__item">
+          <h3 class="section__title">University of Delaware</h3>
+          <div class="resume_date">August 2017 - May 2021</div>
+          <div class="subheading">Newark, DE</div>
+          <div class="degree_title">Bachelor of Mechanical Engineering</div>
+          <p class="subheading">Minor in Computer Science</p>
+          <p class="resume_date">Dean's List Spring 2020 - Spring 2021</p>
+        </div>
+        <div class="education__item">
+          <h3 class="section__title">Henry M. Gunn High School</h3>
+          <div class="resume_date">August 2013 - May 2017</div>
+          <div>Palo Alto, CA</div>
+        </div>
+      </section>
+
+      <section class="skills js-section" id="skills">
+        <div class="my-auto">
+          <h2>Skills</h2>
+          <h3 class="subheading">Programming Languages</h3>
+          <div class="devicons">
             <i class="devicon-python-plain colored"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-html5-plain colored"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-c-plain colored"></i>
-          </li>
-          <li class="list-inline-item">
+            <i class="devicon-csharp-plain colored"></i>
             <i class="devicon-cplusplus-plain colored"></i>
-          </li>
-          <!--
-          <li class="list-inline-item">
-            <img src="https://img.icons8.com/fluent/48/000000/matlab.png"/>
-          </li>
-          <li class="list-inline-item">
-            <img src="https://img.icons8.com/material/48/000000/unix.png"/>
-          </li>
-        -->
-        </ul>
-
-        <div class="subheading mb-3">Skills and Ablilities</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Bilingual in Spanish and English</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Very experienced in SolidWorks</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Advanced Machining Knowledge (mill, lathe, laser cutting, 3D-printing)</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Team Management Experience</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="activities">
-      <div class="my-auto">
-        <h2 class="mb-5">Activities</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Treasurer</h3>
-              <div class="subheading mb-3">Mechanical Engineering Student Squad</div>
-              <p>Logged, managed, and reduced club spending. 
-                Participated in local outreach activities and acted as a tour guide for potential/incoming mechanical engineering students</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">April 2018 - Present</span>
-            </div>
+            <i class="devicon-c-plain colored"></i>
+            <i class="devicon-matlab-plain colored"></i>
+            <i class="devicon-linux-plain colored"></i>
+            <i class="devicon-android-plain colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-vscode-plain colored"></i>
+            <i class="devicon-arduino-plain colored"></i>
+            <i class="devicon-solidworks-plain colored"></i>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-              <div class="resume-content mr-auto">
-                <h3 class="mb-0">Overwatch Team Captain</h3>
-                <div class="subheading mb-3">Video Game Tournament Club</div>
-                <p>Organized matches and team compositions to optimally match opponents.
-                  Proposed and implemented new strategies as game meta changed.</p>
-              </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">April 2017 - Present</span>
-              </div>
-            </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Chassis Lead</h3>
-              <div class="subheading mb-3">U Delaware FSAE Electric Team</div>
-              <p>Planned, designed, and manufactured modified chassis to accept new requirements for electric conversion.
-                Coordinated small team and fundraised to acquire space, tools, and materials necessary.
-                Fabricated battery frames and wheel hubs.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">April 2018 - Present</span>
-            </div>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Safety Captain &amp; Co-Lead</h3>
-              <div class="subheading mb-3">Gunn Robotics Team</div>
-              <p>Edited and enforced the safety practices of team’s machine shop. Presented safety information to judges at FIRST
-                competitions. Organized and taught team of 50 students to prototype and machine mechanisms to handle game pieces
-                for a regional-winning, championship performing robot.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2014 - May 2017</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Group Lead</h3>
-              <div class="subheading mb-3">Gunn Cross Country Team</div>
-              <p>Led warmups and large runs for group of ~30 students. Organized groups when traveling to meets. Mentored students
-                on technique and training regiments.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2013 - December 2016</span>
-            </div>
-          </div>
-      </div>
-  </div>
-  </section>
-
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact_me">
-    <div class="my-auto">
-      <h2 class="mb-5">Contact Me</h2>
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfjiik-hTNBptrmvZTGYqaiwWr3XNmybu0OxtqCgwXlW-BNYA/formResponse" method="post"
-        id="application-form" target="_blank">
-
-        <div class="messages"></div>
-
-        <div class="controls">
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="form_name">First name</label>
-                <input id="form_name" type="text" name="entry.2020885612" class="form-control" placeholder="First name" required="required"
-                  data-error="First name is required.">
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="form_lastname">Last name</label>
-                <input id="form_lastname" type="text" name="entry.2005620554" class="form-control" placeholder="Last name" required="required"
-                  data-error="Last name is required.">
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="form_email">Email</label>
-                <input id="form_email" type="email" name="entry.188506905" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="form_telephone">Phone</label>
-                <input id="form_telephone" type="tel" name="entry.1166974658" class="form-control" placeholder="Phone number">
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="form_message">Message</label>
-                <textarea id="form_message" name="entry.839337160" class="form-control" placeholder="Message" rows="4" required="required"
-                  data-error="Please, leave us a message."></textarea>
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <input type="submit" class="btn btn-success btn-send" value="Send message" id="submit-button">
-            </div>
-          </div>
+          <h3 class="subheading">Skills and Ablilities</h3>
+          <ul class="fa-ul">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Bilingual in Spanish and English</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Very experienced in SolidWorks</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Advanced Machining Knowledge (mill, lathe, laser cutting, 3D-printing)</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Experience with Dynamic Devices Lynx, Hamilton Venus, and Tecan Fluent liquid handlers</li>
+          </ul>
         </div>
+      </section>
 
-      </form>
     </div>
-  </section>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script type="text/JavaScript">
-  (function($) {
-  "use strict"; // Start of use strict
-
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#sideNav'
-  });
-
-})(jQuery); // End of use strict
-  </script>
-
-</body>
-
-<!-- Script to show dialogue and reset form -->
-<script>
-  $('#application-form').submit(function(e) {
-      e.preventDefault();
-      $.ajax({
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSfjiik-hTNBptrmvZTGYqaiwWr3XNmybu0OxtqCgwXlW-BNYA/formResponse",
-          data: $(this).serialize(),
-          type: "POST",
-          dataType: "xml",
-          success: function(data) {
-              console.log('Submission successful');
-              
-          },
-          error: function(xhr, status, error) {
-              console.log('Submission failed: ' + error);
-          }
-      });
-      alert("Thank you, I will be in contact shortly");
-      document.getElementById("application-form").reset();
-  });
-</script>
-
+    <footer class="footer">Handmade with &lt;3.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="resume.js"></script>
+  </body>
 </html>

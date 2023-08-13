@@ -1,0 +1,191 @@
+/* nav specialized to landing page */
+
+nav {
+  background-color: var(--bg-color);
+}
+
+h2 {
+  clear: both;
+}
+
+h3 {
+  clear: both;
+}
+
+ul {
+  list-style-position: outside;
+  margin-left: 1.5rem;
+}
+
+.doc__nav {
+  text-align: right;
+  overflow: hidden;
+  list-style: none;
+  flex-basis: 20%;
+  font-weight: 200;
+}
+
+.doc__nav ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+.doc__nav ul.fixed {
+  position: fixed;
+  top: 2rem;
+}
+
+.doc__nav li:hover {
+  color: var(--primary-color-light);
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+}
+
+.doc__nav .selected {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.doc__nav .selected:after {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--accent-color);
+  left: -1.5rem;
+  top: 0.3rem;
+}
+
+/* hero section */
+.hero {
+  text-align: center;
+  background-color: var(--bg-color);
+  padding: 2rem 0 10rem 0;
+}
+
+.hero__title {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.hero__description {
+  margin: -1rem auto 2rem auto;
+}
+
+.hero__terminal {
+  width: 80%;
+  margin: -11rem auto 3rem auto;
+  text-align: left;
+  color: white;
+  padding: 0 1rem;
+  border-radius: 4px;
+  background-color: #232323;
+  min-height: 150px;
+  animation: fadeUp 2s;
+  box-shadow: 0px 12px 36.8px 9.2px rgba(0, 0, 0, 0.1);
+}
+
+.hero__terminal pre {
+  white-space: pre-line;
+  padding-top: 1rem;
+}
+
+/* experience section */
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience__item {
+  margin: 0 20px 0 0;
+}
+
+.experience .section__title {
+  margin-bottom: 0;
+}
+
+.experience__item p {
+  margin-top: 0.5rem;
+  clear: both;
+}
+
+.experience__item li {
+  margin-top: 0.5rem;
+  clear: both;
+}
+
+.experience .resume_date {
+  float: right;
+  text-align: right;
+  clear: both;
+}
+
+.experience .subheading {
+  float: left;
+  text-align: left;
+  font-weight: bold;
+  margin-inline-end: 10%;
+}
+
+/* education section */
+
+.education__item {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.education__item .section__title {
+  margin-bottom: 0;
+}
+
+.education__item .subheading {
+  float: left;
+  text-align: left;
+  margin-inline-end: 10%;
+  clear: both;
+}
+
+.education__item .degree_title {
+  clear: inline-end;
+  text-align: left;
+  margin-inline-end: 10%;
+}
+
+.education__item .resume_date {
+  float: right;
+  text-align: right;
+}
+
+/* skills section */
+
+.devicons {
+  font-size: 3rem;
+}
+
+.devicons i:hover{
+  color: var(--accent-color);
+}
+
+@media (max-width: 750px) {
+  .hero__terminal {
+    width: 70%;
+  }
+  .tab__container > ul {
+    right: auto;
+    left: 0;
+    padding-left: 0;
+  }
+  .tab__container .code {
+    margin-top: 2rem;
+  }
+  .feature, .keybinding, .changelog__item {
+    flex-direction: column;
+  }
+  .feature__item {
+    max-width: 100%;
+    margin: 0;
+  }
+  .keybinding {
+    font-size: 0.8rem;
+  }
+}
