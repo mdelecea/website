@@ -307,6 +307,7 @@ table td:first-child {
 }
 
 .footer {
+  margin-top: 2rem;
   text-align: center;
   background-color: var(--primary-color);
   padding: 2rem;
@@ -321,4 +322,12 @@ table td:first-child {
   100% {
     transform: translate3d(0,0,0);
   }
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Nunito Sans'),local('Nunito-Sans'),local('sans-serif'),url(https://fonts.googleapis.com/css?family=Nunito+Sans:300&display=swap);
 }
