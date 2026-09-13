@@ -59,10 +59,32 @@ ul {
 
 .devicons {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .devicons i:hover{
   color: var(--accent-color);
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem 2.5rem;
+}
+
+.skill__title {
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.skill__items {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.skill__items li {
+  margin-bottom: 0.25rem;
+  clear: none;
 }
 
 /* experience section */
@@ -76,6 +98,15 @@ ul {
 
 .experience .section__title {
   margin-bottom: 0.5rem;
+}
+
+.experience__theme {
+  color: var(--primary-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 1.5rem 0 0 0;
+  clear: both;
 }
 
 .experience__item p {
@@ -141,22 +172,15 @@ ul {
   .hero__terminal {
     width: 70%;
   }
-  .tab__container > ul {
-    right: auto;
-    left: 0;
-    padding-left: 0;
-  }
-  .tab__container .code {
-    margin-top: 2rem;
-  }
-  .feature, .keybinding, .changelog__item {
-    flex-direction: column;
-  }
-  .feature__item {
-    max-width: 100%;
-    margin: 0;
-  }
-  .keybinding {
-    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .experience .resume_date,
+  .education__item .resume_date,
+  .experience .subheading,
+  .education__item .subheading {
+    float: none;
+    text-align: left;
+    margin-inline-end: 0;
   }
 }

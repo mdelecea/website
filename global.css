@@ -14,6 +14,11 @@
 }
 
 /* normalized */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -36,14 +41,43 @@ a, a:hover {
   color: var(--primary-color);
 }
 
-hr {
-  padding: 1rem 0;
-  border: 0;
-  border-bottom: 1px solid var(--bg-color);
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* accessibility helpers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: white;
 }
 
 /* global components */
@@ -56,108 +90,6 @@ hr {
 /* typography */
 .section__title {
   color: var(--primary-color);
-}
-
-/* tabs */
-.tab__container {
-  position: relative;
-}
-
-.tab__container > ul {
-  position: absolute;
-  list-style: none;
-  margin: 0;
-  right: 1rem;
-  top: -2rem;
-  padding-left: 0;
-}
-
-.tab__container .code {
-  white-space: normal;
-  padding: 1rem 1.5rem;
-}
-
-.tab {
-  display: inline-block;
-  padding: 0.3rem 0.5rem;
-  font-weight: 200;
-  cursor: pointer;
-}
-
-.tab.active {
-  border-bottom: 1px solid var(--primary-color);
-  font-weight: 700;
-  display: inline-block;
-}
-
-.tab__pane {
-  display: none;
-}
-
-.tab__pane.active {
-  display: block;
-}
-
-/* code */
-.code {
-  border-radius: 3px;
-  font-family: Space Mono, SFMono-Regular, Menlo,Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  background: var(--bg-color);
-  border: 1px solid var(--code-bg-color);
-  color: var(--primary-color-light);
-}
-
-.code--block {
-  white-space: pre-line;
-  padding: 0 1.5rem;
-}
-
-.code--inline {
-  padding: 3px 6px;
-  font-size: 80%;
-}
-
-/* buttons */
-.button--primary {
-  padding: 10px 22px;
-  background-color: var(--accent-color);
-  color: white;
-  position: relative;
-  text-decoration: none;
-  border: 0;
-  transition: all .3s ease-out;
-}
-
-.button--primary:after {
-  position: absolute;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--accent-color-light);
-  right: -0.4rem;
-  top: -0.4rem;
-  transition: all 0.3s ease-out;
-}
-
-.button--primary:hover {
-  text-shadow: 0px 1px 1px var(--accent-color-dark);
-  color: white;
-  transform: translate3D(0, -3px, 0);
-}
-
-.button--primary:hover::after {
-  transform: rotate(90deg);
-}
-
-.button--secondary {
-  padding: 10px 22px;
-  border: 2px solid var(--primary-color);
-  transition: all 0.5s ease-out;
-}
-
-.button--secondary:hover {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
 }
 
 /* links */
@@ -246,32 +178,6 @@ nav {
   display: none;
 }
 
-/* table */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  transition: color .3s ease-out;
-  margin-bottom: 2rem;
-}
-
-table td, table th {
-  border: 1px solid var(--code-bg-color);
-  padding: 0.8rem;
-  font-weight: 300;
-}
-
-table th {
-  text-align: left;
-  background-color: white;
-  border-color: white;
-  border-bottom-color: var(--code-bg-color);
-}
-
-table td:first-child {
-  background-color: var(--bg-color);
-  font-weight: 600;
-}
-
 @media screen and (max-width: 600px) {
   nav {
     grid-template-columns: 70px auto;
@@ -303,7 +209,8 @@ table td:first-child {
 /* layout */
 .wrapper {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
+  max-width: 900px;
 }
 
 .footer {
@@ -314,6 +221,11 @@ table td:first-child {
   color: white;
 }
 
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -321,5 +233,27 @@ table td:first-child {
   }
   100% {
     transform: translate3d(0,0,0);
+  }
+}
+
+/* print */
+@media print {
+  nav,
+  .hero__terminal,
+  .skip-link,
+  .footer {
+    display: none;
+  }
+
+  .hero {
+    padding: 0 0 1rem 0;
+  }
+
+  .resume_date {
+    float: none;
+  }
+
+  body {
+    font-size: 11pt;
   }
 }
